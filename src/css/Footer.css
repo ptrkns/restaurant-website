@@ -2,16 +2,24 @@
 
 .Footer-Parent {
     background-color: var(--light-gray);
+    font-family: var(--karla-regular);
+    font-size: var(--karla-regular-size);
+    color: var(--dark-gray);
 }
 
 .Footer-Container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 50vw;
     margin: auto;
     padding: 5vh 0vw;
+}
+
+.Footer-Container section p {
+    font-family: var(--karla-bold);
+    font-size: var(--karla-bold-size);
 }
 
 .Footer-Container section ul {
@@ -29,7 +37,7 @@
 }
 
 .Footer-Container section table tbody td {
-    padding: 1vh 1vw;
+    padding: 1vh 1vw 1vh 0vw;
 }
 
 .Footer-Container a {

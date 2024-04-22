@@ -6,13 +6,21 @@ function Footer() {
     <div className='Footer-Parent'>
       <div className='Footer-Container'>
         <section>
-        <ul>
+          <p>Contact info</p>
+          <ul>
             <li>London SW11 8AY, United Kingdom</li>
             <li>+44 10 3333 4444</li>
             <li>info@littlelemon.com</li>
           </ul>
+          <p>Social media links</p>
+          <ul>
+            <li><a href='https://www.facebook.com' target='_blank'>Facebook</a></li>
+            <li><a href='https://www.instagram.com' target='_blank'>Instagram</a></li>
+            <li><a href='https://www.x.com' target='_blank'>X (Twitter)</a></li>
+          </ul>
         </section>
         <section>
+          <p>Opening hours</p>
           <table>
             <tbody>
               <tr>
@@ -45,13 +53,6 @@ function Footer() {
               </tr>
             </tbody>
           </table>
-        </section>
-        <section>
-          <ul>
-            <li><a href='https://www.facebook.com' target='_blank'>Facebook</a></li>
-            <li><a href='https://www.instagram.com' target='_blank'>Instagram</a></li>
-            <li><a href='https://www.x.com' target='_blank'>X (Twitter)</a></li>
-          </ul>
         </section>
       </div>
     </div>
