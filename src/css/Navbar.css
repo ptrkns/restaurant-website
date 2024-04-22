@@ -1,0 +1,51 @@
+.Navbar-Parent {
+    cursor: default;
+}
+
+.Navbar-UL {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Doormat-UL {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 700px) {
+    .Navbar-UL li {
+        margin: 0vh 0.5vw;
+        padding: 2.5vh 1vw;
+        border-bottom: 3px solid white;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 701px) {
+    .Navbar-UL li {
+        margin: 0vh 0.5vw;
+        padding: 3vh 1vw;
+        border-bottom: 3px solid white;
+        transition: 300ms;
+    }
+}
+
+.Nav-Link, .Doormat-Link {
+    text-decoration: none;
+    color: black;
+}
+
+.Navbar-UL li:hover {
+    transition: 300ms;
+    border-bottom: 3px solid lightgray;
+}

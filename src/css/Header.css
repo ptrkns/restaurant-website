@@ -1,0 +1,29 @@
+@media (max-width: 700px) {
+    .Header-Parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .Header-Parent img {
+        margin-top: 1.5vh;
+        width: 50vw;
+    }
+}
+
+@media (min-width: 701px) {
+    .Header-Parent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0vh 1vw;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .Header-Parent img {
+        width: 15vw;
+    }
+}
