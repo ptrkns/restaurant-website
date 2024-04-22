@@ -1,0 +1,38 @@
+@import url(./Variables.css);
+
+.Footer-Parent {
+    background-color: var(--light-gray);
+}
+
+.Footer-Container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 50vw;
+    margin: auto;
+    padding: 5vh 0vw;
+}
+
+.Footer-Container section ul {
+    margin: 0;
+    padding: 0;
+}
+
+.Footer-Container section ul li {
+    list-style: none;
+    padding: 1vh 0vw;
+}
+
+.Footer-Container section table {
+    border-collapse: collapse;
+}
+
+.Footer-Container section table tbody td {
+    padding: 1vh 1vw;
+}
+
+.Footer-Container a {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
