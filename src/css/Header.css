@@ -6,17 +6,31 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .Header-Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Logo-Icon-Container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+        padding: 1vh 3vw;
         border-bottom: 1px solid var(--light-gray);
     }
 
-    .Header-Parent img {
-        margin-top: 1.5vh;
-        width: 50vw;
+    .Logo-Icon-Container Link img {
+        height: 20vh;
     }
 }
 
 @media (min-width: 701px) {
-    .Header-Parent {
+    .Header-Container {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -25,7 +39,7 @@
         border-bottom: 1px solid var(--light-gray);
     }
 
-    .Header-Parent img {
-        width: 15vw;
+    .Header-Container img {
+        height: 5vh;
     }
 }
