@@ -2,16 +2,21 @@ import '../css/Navbar.css';
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-function Navbar() {
+function Navbar(props) {
+
+  const handleClick = () => {
+    props.setHamburgerClick(!props.hamburgerClick);
+  }
+
   return (
     <div className='Navbar-Parent'>
       <ul className='Navbar-UL'>
-        <li><Link className='Nav-Link' to='/'>Home</Link></li>
-        <li><Link className='Nav-Link' to='/about'>About</Link></li>
-        <li><Link className='Nav-Link' to='/menu'>Menu</Link></li>
-        <li><Link className='Nav-Link' to='/reservations'>Reservations</Link></li>
-        <li><Link className='Nav-Link' to='/order'>Order online</Link></li>
-        <li><Link className='Nav-Link' to='/login'>Login</Link></li>
+        <li><Link className='Nav-Link' to='/' onClick={handleClick}>Home</Link></li>
+        <li><Link className='Nav-Link' to='/about' onClick={handleClick}>About</Link></li>
+        <li><Link className='Nav-Link' to='/menu' onClick={handleClick}>Menu</Link></li>
+        <li><Link className='Nav-Link' to='/reservations' onClick={handleClick}>Reservations</Link></li>
+        <li><Link className='Nav-Link' to='/order' onClick={handleClick}>Order online</Link></li>
+        <li><Link className='Nav-Link' to='/login' onClick={handleClick}>Login</Link></li>
       </ul>
     </div>
   )
