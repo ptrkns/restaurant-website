@@ -1,0 +1,19 @@
+@import './Variables.css';
+
+.Button-Parent {
+    padding: 1vw 2vw 1vw 2vw;
+    border: 0px;
+    border-radius: 10px;
+    font-family: var(--karla-extra-bold);
+    font-size: var(--karla-extra-bold-size);
+    text-decoration: none;
+    background-color: var(--yellow);
+    color: var(--dark-gray);
+    transition: 350ms;
+}
+
+.Button-Parent:hover {
+    background-color: var(--light-yellow);
+    transition: 350ms;
+    cursor: pointer;
+}
