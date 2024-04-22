@@ -1,0 +1,72 @@
+/* Markazi */
+
+@font-face {
+    font-family: 'Markazi-Regular';
+    src: url('../fonts/MarkaziText-VariableFont_wght.ttf') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Markazi-Medium';
+    src: url('../fonts/MarkaziText-VariableFont_wght.ttf') format('woff');
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Karla */
+
+@font-face {
+    font-family: 'Karla-Regular';
+    src: url('../fonts/Karla-VariableFont_wght.ttf') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla-Medium';
+    src: url('../fonts/Karla-VariableFont_wght.ttf') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla-Bold';
+    src: url('../fonts/Karla-VariableFont_wght.ttf') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla-Extra-Bold';
+    src: url('../fonts/Karla-VariableFont_wght.ttf') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+:root {
+    /* Markazi font */
+    --markazi-medium: 'Markazi-Medium', sans-serif;
+    --markazi-regular: 'Markazi-Regular', sans-serif;
+
+    /* Karla fonts */
+    --karla-extra-bold: 'Karla-Extra-Bold', sans-serif;
+    --karla-extra-bold-size: 15pt;
+
+    --karla-bold: 'Karla-Bold', sans-serif;
+    --karla-bold-size: 15pt;
+
+    --karla-regular: 'Karla-Regular', sans-serif;
+    --karla-regular-size: 15pt;
+
+    --karla-medium: 'Karla-Medium', sans-serif;
+    --karla-medium-size: 15pt;
+
+    /* Colors */
+    --dark-green: #495E57;
+    --yellow: #F4CE14;
+    --peach: #EE9972;
+    --light-peach: #FBDABB;
+    --light-gray: #EDEFEE;
+    --dark-gray: #333333;
+}
