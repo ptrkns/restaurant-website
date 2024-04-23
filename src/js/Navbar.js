@@ -1,11 +1,16 @@
 import '../css/Navbar.css';
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { useScreenWidth } from './ScreenWidthProvider.js';
 
 function Navbar(props) {
 
+  const screenWidth = useScreenWidth();
+
   const handleClick = () => {
-    props.setHamburgerClick(!props.hamburgerClick);
+    if(screenWidth < 701) {
+      props.setHamburgerClick(!props.hamburgerClick);
+    }
   }
 
   return (
