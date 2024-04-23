@@ -22,7 +22,19 @@
     }
 }
 
-@media (min-width: 701px) {
+@media (min-width: 701px) and (max-width: 1374px) {
+    .Footer-Container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        width: 100vw;
+        margin: auto;
+        padding: 5vh 10vw;
+    }
+}
+
+@media (min-width: 1375px) {
     .Footer-Container {
         display: flex;
         flex-direction: row;

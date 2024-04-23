@@ -5,10 +5,9 @@
 }
 
 @media (max-width: 700px) {
-
     .Navbar-Parent {
         position: fixed;
-        top: 8.7vh;
+        top: 6.28vh;
         left: 0;
         z-index: 1;
     }
@@ -21,7 +20,7 @@
         margin: 0;
         padding: 0;
         width: 100vw;
-        background-color: var(--dark-green);
+        background-color: var(--light-gray);
         list-style: none;
     }
 
@@ -32,13 +31,46 @@
 
     .Nav-Link {
         text-decoration: none;
-        color: white;
+        color: var(--dark-gray);
         font-family: var(--karla-bold);
         font-size: var(--karla-bold-size);
     }
 }
 
-@media (min-width: 701px) {
+@media (min-width: 701px) and (max-width: 1374px) {
+    .Navbar-Parent {
+        position: fixed;
+        top: 6.28vh;
+        right: 0;
+        z-index: 1;
+    }
+
+    .Navbar-UL {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 40vw;
+        background-color: var(--light-gray);
+        list-style: none;
+    }
+
+    .Navbar-UL li {
+        margin: 0vh 0vw;
+        padding: 2vh 0vw;
+    }
+
+    .Nav-Link {
+        text-decoration: none;
+        color: var(--dark-gray);
+        font-family: var(--karla-bold);
+        font-size: var(--karla-bold-size);
+    }
+}
+
+@media (min-width: 1375px) {
     .Navbar-UL {
         display: flex;
         flex-direction: row;
@@ -52,13 +84,12 @@
     .Navbar-UL li {
         margin: 0vh 0.5vw;
         padding: 3vh 1vw;
-        border-bottom: 3px solid white;
-        transition: 300ms;
+        border-bottom: 5px solid white;
     }
 
     .Navbar-UL li:hover {
         transition: 300ms;
-        border-bottom: 3px solid var(--dark-green);
+        border-bottom: 5px solid var(--dark-green);
     }
 
     .Nav-Link {

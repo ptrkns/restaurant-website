@@ -8,7 +8,7 @@ function Navbar(props) {
   const screenWidth = useScreenWidth();
 
   const handleClick = () => {
-    if(screenWidth < 701) {
+    if(screenWidth < 1375) {
       props.setHamburgerClick(!props.hamburgerClick);
     }
   }

@@ -20,15 +20,15 @@ function Header() {
 
   return (
     <div className='Header-Parent'>
-        {screenWidth < 701 && <div className='Header-Container'>
+        {screenWidth < 1375 && <div className='Header-Container'>
           <div className='Logo-Icon-Container'>
-            <Link to='/' onClick={()=>{setHamburgerClick(false)}}><img src={logo}/></Link>
+            <Link to='/' onClick={()=>{setHamburgerClick(false)}}><img className='LI-Container-Image' src={logo}/></Link>
             <img src={hamburger} onClick={handleClick}/>
           </div>
           {hamburgerClick === true && <Navbar hamburgerClick={hamburgerClick} setHamburgerClick={setHamburgerClick}/>}
         </div>}
 
-        {screenWidth >= 701 && <div className='Header-Container'>
+        {screenWidth >= 1375 && <div className='Header-Container'>
           <Link to='/'><img src={logo}/></Link>
           <Navbar/>
         </div>}
