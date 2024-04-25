@@ -30,7 +30,11 @@
         justify-content: space-evenly;
         width: 100vw;
         margin: auto;
-        padding: 5vh 10vw;
+        padding: 5vh 2vw;
+    }
+
+    .Contact-Section, .Social-Section {
+        width: 20vw;
     }
 }
 
