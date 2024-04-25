@@ -1,0 +1,93 @@
+@import './Variables.css';
+
+.Reservation-Form-Parent {
+    font-family: var(--karla-regular);
+    font-size: var(--karla-regular-size);
+    color: white;
+}
+
+@media(max-width: 700px) {
+    section h1 {
+        font-family: var(--markazi-medium);
+        font-size: 2.5rem;
+        color: var(--yellow);
+        padding: 1vh 0vw 0.5vh 0vw;
+    }
+
+    label {
+        padding: 2vh 0vw 1vh 0vw;
+        font-size: 1.25rem;
+    }
+}
+
+@media(min-width: 701px) and (max-width: 1374px) {
+    section h1 {
+        font-family: var(--markazi-medium);
+        font-size: 3rem;
+        color: var(--yellow);
+        padding: 1vh 0vw 0.5vh 0vw;
+    }
+
+    label {
+        padding: 2vh 0vw 1vh 0vw;
+        font-size: 1.5rem;
+    }
+}
+
+@media(min-width: 1375px) {
+    section h1 {
+        font-family: var(--markazi-medium);
+        font-size: 4rem;
+        color: var(--yellow);
+        padding: 1vh 0vw 0.5vh 0vw;
+    }
+
+    label {
+        padding: 2vh 0vw 1vh 0vw;
+        font-size: 2rem;
+    }
+}
+
+.Input-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#Diners-Input, #Occasion-Input, #Requirements-Input, #Full-Name-Input, #Email-Input, #Phone-Input {
+    width: 100%;
+}
+
+#Time-Date-Input {
+    width: 48%;
+}
+
+#Diners-Input, #Occasion-Input, #Time-Date-Input, #Requirements-Input, #Full-Name-Input, #Email-Input, #Phone-Input {
+    background-color: white;
+    border-style: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 1vh 2vw;
+}
+
+.Time-Date-Div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#Requirements-Input {
+    width: 100%;
+    max-width: 100%;
+    min-height: 3vh;
+    margin-bottom: 2.5vh;
+}
+
+.Button-Container {
+    display: flex;
+    justify-content: center;
+    padding: 3.5vh 0vw 3vh 0vw;
+}
