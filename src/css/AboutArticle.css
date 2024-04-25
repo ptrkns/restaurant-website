@@ -53,8 +53,12 @@
     .About-Left h1 {
         padding-bottom: 1vh;
         font-family: var(--markazi-medium);
-        font-size: 1.5rem;
+        font-size: 3rem;
         color: var(--dark-gray);
+    }
+
+    .About-Left p {
+        font-size: 1.5rem;
     }
 
     .About-Right { /* Image container */
