@@ -4,9 +4,14 @@ import '../css/Button.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import './SpecialsCard.js';
 import food from '../assets/food.jpg';
 import marioAdrian1 from '../assets/mario-adrian-1.jpg';
 import marioAdrian2 from '../assets/mario-adrian-2.jpg';
+import bruschetta from '../assets/bruchetta.jpg';
+import salad from '../assets/greek-salad.jpg';
+import dessert from '../assets/lemon-dessert.jpg';
+import SpecialsCard from './SpecialsCard.js';
 
 function Home() {
 
@@ -37,6 +42,9 @@ function Home() {
           <Link className='Link-Button' to="/order">Order online</Link>
       </section>
       <section className='Highlights-Bottom'>
+        <SpecialsCard image={bruschetta} name={'Bruschetta'} price={'10'}/>
+        <SpecialsCard image={salad} name={'Greek Salad'} price={'10'}/>
+        <SpecialsCard image={dessert} name={'Lemon Dessert'} price={'5'}/>
       </section>
     </article>
     <article className='About-Article'>
